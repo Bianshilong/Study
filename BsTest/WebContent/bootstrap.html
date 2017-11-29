@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<h1>Hello,BootStrap!</h1>
+	<div class="container">
+		<!-- 显示一个2:1比例的效果 -->
+		<div class="row">
+			<div class="col-md-8">2</div>
+			<div class="col-md-4">1</div>
+		</div>
+		<!-- 页面尺寸 -->
+		<div class="row">
+			<div class="col-sm-6 col-md-4">a</div>
+			<div class="col-sm-6 col-md-4">b</div>
+			<div class="col-sm-6 col-md-4">c</div>
+		</div> 
+		<!-- col-md-offset-数字 将块向右移动对应数字的列 -->
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">b</div>
+			<div class="col-md-4 col-md-offset-4">a</div>
+		</div> 
+	</div>
+	<!-- 文字色彩会发生变化，强调文字所表达的不同信息 -->
+	<p class="text-muted">提示</p>
+	<p class="text-primary">正文</p>
+	<p class="text-success">成功</p>
+	<p class="text-info">通知</p>
+	<p class="text-warning">警告</p>
+	<p class="text-danger">危险</p>
+	<!--  设置背景样式,显示整列的背景样式-->
+	<p class="text-muted">无bg-muted样式</p>
+	<p class="bg-primary">正文</p>
+	<p class="bg-success">成功</p>
+	<p class="bg-info">通知</p>
+	<p class="bg-warning">警告</p>
+	<p class="bg-danger">危险</p>
+	<hr/>
+	<!-- 文字对齐  text-lg- 无效果-->
+	<p class="text-left">居左</p>
+	<p class="text-lg-left">居左</p>
+	<p class="text-right">居右</p>
+	<p class="text-lg-right">居右</p>
+	<p class="text-center">居中</p>
+	<p class="text-lg-center">居中</p>
+	<!-- 按钮 -->
+	<button type="button" class="btn">基础按钮</button>
+	<button type="button" class="btn btn-default">白色圆角按钮</button>
+	<button type="button" class="btn btn-primary">主要按钮</button>
+	<button type="button" class="btn btn-success">成功按钮</button>
+	<button type="button" class="btn btn-info">信息按钮</button>
+	<button type="button" class="btn btn-warning">警告按钮</button>
+	<button type="button" class="btn btn-danger">危险按钮</button>
+	<button type="button" class="btn btn-light">按钮颜色较浅</button>
+	<button type="button" class="btn btn-link">链接按钮</button>
+	<!-- 按钮大小 -->
+	<br/>
+	<button type="button" class="btn btn-success btn-lg">大型成功按钮</button>
+	<button type="button" class="btn btn-success">正常成功按钮</button>
+	<button type="button" class="btn btn-success btn-sm">小型成功按钮</button>
+	<!-- 设置图片显示效果 -->
+	<br/>
+	<hr/>
+	<img class="rounded" alt="圆角效果" src="img/fullimage1.jpg">
+	<div class="container">
+		<img class="rounded-circle" alt="圆形效果" src="img/fullimage1.jpg" width="304" height="236">
+	</div>
+	<img class="img-thumbnail" alt="圆角外边框" src="img/fullimage1.jpg">
+	<img class="img-circle" alt="根据容器自定义尺寸" src="img/fullimage1.jpg">
+</body>
+</html>
