@@ -33,9 +33,9 @@ public class UserDao {
 	
 	public List<User> byNameAndPass(User user){
 		
-		String sql = "select u from User u where u.name=?1 and u.pass=?2";
+		String hql = "select u from User u where u.name=?1 and u.pass=?2";
 		Session session = sessionFactory.openSession();
-		List<User> list = session.createQuery(sql).setString(1, user.getName())
+		List<User> list = session.createQuery(hql).setString(1, user.getName())
 							.setString(2, user.getPass()).list();
 //		List<User> list=(List<User>) session.createSQLQuery(sql).addEntity("u",User.class);
 		session.close();

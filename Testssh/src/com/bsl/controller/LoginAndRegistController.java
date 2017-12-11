@@ -3,7 +3,6 @@ package com.bsl.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import com.bsl.entity.User;
 import com.bsl.form.Vo;
 import com.bsl.service.UserService;

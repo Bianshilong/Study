@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册页面</title>
+<link rel="short cut icon" href="/iSite/favicon.ico" />
+<link rel="stylesheet" href="../css/rgCss.css" type="text/css" />
+</head>
+<body>
+	<br>
+	<br>
+	<!-- 图片与文档底对齐 -->
+	<div class="p1 tb">
+		<img src="../img/logo.png" align="middle" /> &nbsp;&nbsp; <span
+			class="sp">注册信息</span>
+	</div>
+	<br />
+	<hr size="10px" width="60%" color="PapayaWhip" />
+	<div class="p2">
+		<form action="regist" method="post">
+			<table>
+				<tr>
+					<td>用户名:</td>
+					<td><input type="text" required="required" name="username" /></td>
+					<td>（４-8位，字母，数字，符号）</td>
+				</tr>
+				<tr>
+					<td>密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+					<td><input type="password" required="required" name="password" /></td>
+					<td>（6-12位，字母，数字，符号）</td>
+				</tr>
+				<tr>
+					<td>密码确认：</td>
+					<td><input type="password" required="required"  name="password"/></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>邮箱：</td>
+					<td><input type="text" required="required" name="email" /></td>
+					<td>（支持：QQ、网易、新浪）</td>
+				</tr>
+				<tr>
+					<td>性别：</td>
+					<td>男<input name="sex" type="radio" checked="checked" />&nbsp;&nbsp;&nbsp;
+						女<input name="sex" type="radio" /></td>
+					<td></td>
+				</tr>
+				<!-- 先把集合注释掉 -->
+				<!-- <tr>
+					<td>兴趣部落：</td>
+					<td><input type="checkbox" name="habirat" /> 体育 <input type="checkbox" name="habirat" />游戏
+						<input type="checkbox" name="habirat" /> 综艺 <input type="checkbox" name="habirat" />直播</td>
+					<td><input type="checkbox" name="habirat" /> 财经 <input type="checkbox" name="habirat" />文学</td>
+				</tr> -->
+				<tr>
+					<td>出生日期：</td>
+					<td><input type="date" required="required" name="birth" /></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="提交" /></td>
+					<td><input type="reset" value="重置"/></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div class="ud">
+		<span>当使用本站时，代表您已接受了本站的使用条款和隐私条款。版权所有，保留一切权利。&copy;2017
+			皖ICP5879156</span><br />
+
+	</div>
+</body>
+</html>
