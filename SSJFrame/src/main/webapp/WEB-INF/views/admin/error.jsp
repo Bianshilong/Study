@@ -8,11 +8,11 @@
 <title>错误页面</title>
 </head>
 <body>
-	//实现数据验证功能
+	<!-- //实现数据验证功能 -->
 	<form:form modelAttribute="admin_vo">
 		<form:errors path="*"></form:errors>
 	</form:form>
 	${error_msg}
-	<a href="${pageContext.request.contextPath }/admin/index">点此重新登录</a>
+	<a href="${pageContext.request.contextPath }/admin/loginUI">点此重新登录</a>
 </body>
 </html>
