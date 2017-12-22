@@ -2,6 +2,8 @@ package com.yue.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +11,7 @@ import com.yue.entity.Computer;
 import com.yue.repository.ComputerDao;
 
 @Service
+@Transactional
 public class ComputerService {
 
 	/**
@@ -34,7 +37,12 @@ public class ComputerService {
 		return list;
 	}
 	//新增信息,更新信息,根据id获取到信息，现在在页面，然后修改信息后，调用该方法
-	public void insertOrUpdate(Computer computer) {
+	public void insert(Computer computer) {
+		dao.save(computer);
+	}
+	
+	//,更新信息,根据id获取到信息，显示在页面，然后修改信息后，调用该方法
+	public void Update(Computer computer) {
 		dao.save(computer);
 	}
 	
@@ -46,12 +54,27 @@ public class ComputerService {
 	/**
 	 * 删除多个信息,可以通过前端传递的id切割成数组，
 	 * 转换成整形数组，通过遍历查询所有的id对应的字段加入到list中，然后调用该方法删除
+	 * 该方法未被调用
 	 */
 	public void delete(List<Computer> lsit) {
 		dao.delete(lsit);
 	}
 	
 	/**
-	 * 或者在dao层使用@Query来定义查询多个ids和删除ids的方法来实现
+	 * deleteByIds，方法二的删除方式
 	 */
+	public void delMore(List<Long> ids) {
+		dao.deleteByIds(ids);
+	}
+	
+	//通过id的集合来查询指定id的数据
+	public List<Computer> findByIds(List<Long> ids){
+		List<Computer> list = dao.findAll(ids);
+		return list;
+	}
+	
+	//批量删除,方法一的删除方式
+	public void deleteByLists(List<Computer> list) {
+		dao.deleteInBatch(list);
+	}
 }

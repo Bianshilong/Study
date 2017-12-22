@@ -39,16 +39,16 @@
 	<!-- 定义无需Controller的url<->view直接映射 -->
 	<mvc:view-controller path="/" view-name="redirect:/index"/>
 	
-	<!-- <mvc:interceptors>
-	    <bean class="com.yue.interceptor.RequestInterceptor1"></bean>
+	<mvc:interceptors>
+	    <!-- <bean class="com.yue.interceptor.RequestInterceptor1"></bean> -->
 	    <bean class="com.yue.interceptor.RequestInterceptor"></bean>
-	</mvc:interceptors> -->
+	</mvc:interceptors>
 	<!-- 将Controller抛出的异常转到特定View  打开注释后会跳转到500.jsp中-->
-	<!-- <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">  
 		<property name="exceptionMappings">  
 			<props>  
 				<prop key="java.lang.Throwable">/error/500</prop>
             </props>  
 		</property>  
-    </bean> -->
+    </bean>
 </beans>

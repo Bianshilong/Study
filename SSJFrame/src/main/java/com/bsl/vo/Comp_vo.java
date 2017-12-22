@@ -1,6 +1,7 @@
 package com.bsl.vo;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -32,6 +33,5 @@ public class Comp_vo {
 	
 	@NotNull(message="价格不能为空")
 	private Double price;
-	
 	private String date;
 }
